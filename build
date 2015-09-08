@@ -1,3 +1,0 @@
-#!/bin/sh
-
-gcc -Wall -o quasi-secure-chat quasi-secure-chat.c -L/usr/lib -lssl -lcrypto -O0
