@@ -2,9 +2,9 @@
 secure chat client/server
 
 
-## README TO QUASI-SECURE-CHAT
+## README TO REYSECURE-CHAT
 
-The quasi-secure-chat program was written in C and built and run on linux kernel 3.13 (ubuntu 14.04.1)
+The reysecure-chat program that uses encrypted communications and self-modifying run time code that rewrites code in memoryto throw off run time inspection or reverse engineering efforts.  It was written in C and built and run on linux kernel 3.13 (ubuntu 14.04.1)
 
 1.) The source code consists of a single file: quasi-secure.chat.c
 
@@ -27,22 +27,22 @@ $ sudo cp ca.crt /usr/share/ca-certificates/ca.crt
 
 7.) To run as listener:
 #> ./listener.sh
-(password = "test123")
+(e.g. password = "test123")
 
 8.) To run as connector:
 #> ./connector.sh
-(password = "client123")
+(e.g. password = "client123")
 
-9.) Quasi-secure-chat uses OpenSSLv3 to encrypt data transfer between listener and connector.  The listener has the server side keys.  The connector has the client side keys.  Both sides require to exchange their public keys to be validated and decrypt by the other party. .
+9.) reysecure-chat uses OpenSSLv3 to encrypt data transfer between listener and connector.  The listener has the server side keys.  The connector has the client side keys.  Both sides require to exchange their public keys to be validated and decrypt by the other party.
 
 10.) The cert and private keys are needed for both connector and listener.  The cert and key files can be specified as a command line parameter and have been included in the bash scripts for listener.sh and connector.sh.
 
-11.) Quasi-secure-chat uses mprotect (to change memory write permissions) and memcpy(to change pointer functions) and labels (to jump to sections) in ordrer to rewrite code in memory.  The code that is rewritten in memory simply adds in a call to SSL (SSL_init) that will cause the program to fail execution if it is not written - thus preventing tampering.
+11.) reysecure-chat uses mprotect (to change memory write permissions) and memcpy(to change pointer functions) and labels (to jump to sections) in ordrer to rewrite code in memory.  The code that is rewritten in memory simply adds in a call to SSL (SSL_init) that will cause the program to fail execution if it is not written - thus preventing tampering.
 
 12.) The code is not pretty.  I didn't have much time to clean up and/or refactor. It's all very basic C code.
 
 
-Let me know if you have any questions:  jareynolds@gmail.com
+Let me know if you have any questions:  reynjames67@gmail.com
 
 -- James    
 
