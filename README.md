@@ -1,4 +1,4 @@
-# secure-chat
+# reysecure-chat
 secure chat client/server
 
 
