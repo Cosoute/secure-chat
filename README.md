@@ -4,6 +4,8 @@ secure chat client/server
 
 ## README TO REYSECURE-CHAT
 
+Article https://www.reysec.com/post/type-1-hyper-visor-with-true-crypt
+
 The reysecure-chat program that uses encrypted communications and self-modifying run time code that rewrites code in memoryto throw off run time inspection or reverse engineering efforts.  It was written in C and built and run on linux kernel 3.13 (ubuntu 14.04.1)
 
 1.) The source code consists of a single file: quasi-secure.chat.c
