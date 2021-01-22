@@ -1,5 +1,5 @@
 # reysecure-chat
-secure chat client/server
+secure chat client/server using self modifying run-time code making difficult to reverse engineer the binary
 
 
 ## README TO REYSECURE-CHAT
