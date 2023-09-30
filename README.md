@@ -4,7 +4,7 @@ secure chat client/server using self modifying run-time code making difficult to
 
 ## README TO REYSECURE-CHAT
 
-Article https://www.reysec.com/post/type-1-hyper-visor-with-true-crypt
+Article https://cosoute.wixsite.com/reysec
 
 The reysecure-chat program that uses encrypted communications and self-modifying run time code that rewrites code in memoryto throw off run time inspection or reverse engineering efforts.  It was written in C and built and run on linux kernel 3.13 (ubuntu 14.04.1)
 
@@ -12,7 +12,6 @@ The reysecure-chat program that uses encrypted communications and self-modifying
 
 2.) Source code snippets were taken from the following:
 a.) OpenSSL connection sample: http://simplestcodings.blogspot.com.br/2010/08/secure-server-client-using-openssl-in-c.html
-
 b.) Self-Modifying code sample: http://nmav.gnutls.org/2011/12/self-modifying-code-using-gcc.html 
 
 3.) To build, type in "./build" within the directory 
