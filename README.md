@@ -8,17 +8,16 @@ Article https://www.reysec.com/post/type-1-hyper-visor-with-true-crypt
 
 The reysecure-chat program that uses encrypted communications and self-modifying run time code that rewrites code in memoryto throw off run time inspection or reverse engineering efforts.  It was written in C and built and run on linux kernel 3.13 (ubuntu 14.04.1)
 
-1.) The source code consists of a single file: quasi-secure.chat.c
+1.) The source code consists of a single file: quasi-secure.chat.c.  I purposely made this as simple as humanly possible to keep this super straightforward.
 
 2.) Source code snippets were taken from the following:
 a.) OpenSSL connection sample: http://simplestcodings.blogspot.com.br/2010/08/secure-server-client-using-openssl-in-c.html
 
 b.) Self-Modifying code sample: http://nmav.gnutls.org/2011/12/self-modifying-code-using-gcc.html 
 
-
 3.) To build, type in "./build" within the directory 
 
-4.) before building, please install opensslv3
+4.) before building, please install opensslv3. You need to build openssl from source. For instructions on how to build openssl on OSX, please see the openssl-readme in this repo.
 
 5.) Once it has been built, a binary file "quasi-secure-chat" should be generated.  
 
